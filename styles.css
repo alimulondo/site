@@ -1,0 +1,225 @@
+body{
+	/*background-size: cover;*/
+	font: 300 16px/1.4 'Open Sans',Helvetica,Arial,sans-serif;
+    color: #444;
+    background: #fff;
+    position: relative;
+    display: block;
+    right: 0;
+    margin: 0;
+	background: url("images/KCCA.jpg") center center no-repeat;
+/*    background: rgba(0, 0, 0, 0.5);
+*/}
+}
+
+#_main-container{
+	position: absolute;
+	width: 100%
+	height:100%;
+	background: url("images/KCCA.jpg") center center no-repeat;
+	background-size: contain;
+
+}
+
+h1, p {
+	padding: 5px;
+}
+
+#head_div{
+	position: absolute;
+	margin-left: -8px;
+	margin-top: -8px;
+	height: calc(8rem);
+	width: calc(100%);
+	/*background-color: #455c9c;*/
+	background-color: #2e0092;
+}
+
+#logo_div{
+	position: absolute;
+	margin-left: 2rem;
+	margin-top: calc(1rem - 6px);
+	width: 13rem;
+	height: 8rem;
+	background-color: black;
+	background: url("images/logo.png") no-repeat ;
+	background-size: contain;
+
+}
+
+.board_div{
+	position: absolute;
+	margin-left: calc(50% - 25rem);
+	margin-top: calc(30% - 11rem);
+	width: 50rem;
+	height: 25rem;
+	background-color: #fff;
+	background: url(images/wndpic1.png) no-repeat  ;
+	background-size: contain;
+}
+._container{
+	position: absolute;
+	margin-top: 13rem;
+	min-width: 100%;
+	min-height: 100%;
+	background: url("images/back.jpg") center center no-repeat;
+   background: rgba(0, 0, 0, 0.5);
+
+    /*background-size: cover;*/
+	
+}
+._pic-display{
+	position: absolute;
+	margin-top: 10rem;
+	margin-left: 10rem;
+	width: 30rem;
+	height: 20rem;
+	/*background-color: white;*/
+	background: url("images/logo.png") no-repeat ;
+	background-size: contain;
+
+}
+
+._logo-back{
+	position: absolute;
+	/*margin-top: 10rem;*/
+	width: 14rem;
+	height: 8rem;
+	background-color: white;
+}
+
+._menu{
+	position: absolute;
+	margin-left: calc(100% - 25rem) ;
+	margin-top: 2rem;
+
+}
+ #head_div ul li{
+ 	display: inline;
+ 	padding: 20px;
+ 	color: #fff;
+ }
+
+ li:hover{
+ 	text-decoration: underline;
+ }
+
+a{
+	cursor: pointer;
+}
+
+.spinner div {
+    position: absolute;
+    margin-left: calc(50% - 20rem);
+	margin-top: calc(20% - 11rem);
+	width: 30rem;
+	height: 30rem;
+	/*width: 120px;*/
+    /*height: 120px;*/
+	background-color: #fff;
+	
+	background: url(images/wndpic1.png) no-repeat  ;
+	background-size: contain;
+    border: 1px solid #ccc;
+    background: rgba(255,255,255,0.8);
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+    text-align: center;
+    /*line-height: 120px;
+    font-size: 100px;*/
+}
+
+.spinner .face1 { 
+    -webkit-transform: translateZ(15rem);
+    -ms-transform: translateZ(15rem);
+    transform: translateZ(15rem);
+    background: url(images/face1.jpg) no-repeat  ;
+	background-size: cover;
+}
+.spinner .face2 { 
+    -webkit-transform: rotateY(90deg) translateZ(15rem); 
+    -ms-transform: rotateY(90deg) translateZ(15rem); 
+    transform: rotateY(90deg) translateZ(15rem); 
+    /*background: url(images/face2.jpg) no-repeat  ;*/
+    background: url(images/KCCA2.jpg) no-repeat  ;
+	background-size: cover;
+}
+.spinner .face3 { 
+    -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(15rem); 
+    -ms-transform: rotateY(90deg) rotateX(90deg) translateZ(15rem); 
+    transform: rotateY(90deg) rotateX(90deg) translateZ(15rem); 
+    background: url(images/face3.jpg) no-repeat  ;
+	background-size: cover;
+}
+.spinner .face4 { 
+    -webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(15rem); 
+    -ms-transform: rotateY(180deg) rotateZ(90deg) translateZ(15rem); 
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(15rem); 
+    background: url(images/face4.jpg) no-repeat  ;
+	background-size: cover;
+}
+.spinner .face5 { 
+    -webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(15rem); 
+    -ms-transform: rotateY(-90deg) rotateZ(90deg) translateZ(15rem); 
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(15rem); 
+    background: url(images/face5.jpg) no-repeat  ;
+	background-size: cover;
+}
+.spinner .face6 { 
+    -webkit-transform: rotateX(-90deg) translateZ(15rem); 
+    -ms-transform: rotateX(-90deg) translateZ(15rem); 
+    transform: rotateX(-90deg) translateZ(15rem); 
+    background: url(images/face6.jpg) no-repeat  ;
+	background-size: cover;
+}
+
+.spinner {
+    -webkit-animation: spincube 30s ease-in-out infinite;
+    animation: spincube 30s ease-in-out infinite;
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    /*-webkit-transform-origin: calc(50% - 25rem) calc(50% - 25rem) 0;*/
+    /*-ms-transform-origin: calc(50% - 25rem) calc(50% - 25rem) 0;*/
+    transform-origin: 35rem 23rem 0rem;
+}
+
+@-webkit-keyframes spincube {
+    16%      { -webkit-transform: rotateY(-90deg);                }
+    33%      { -webkit-transform: rotateY(-90deg) rotateZ(90deg); }
+    50%      { -webkit-transform: rotateY(180deg) rotateZ(90deg); }
+    66%      { -webkit-transform: rotateY(90deg) rotateX(90deg);  }
+    83%      { -webkit-transform: rotateX(90deg);                 }
+}
+@keyframes spincube {
+    16%      { -ms-transform: rotateY(-90deg); transform: rotateY(-90deg); }
+    33%      { -ms-transform: rotateY(-90deg) rotateZ(90deg); transform: rotateY(-90deg) rotateZ(90deg); }
+    50%      { -ms-transform: rotateY(180deg) rotateZ(90deg); transform: rotateY(180deg) rotateZ(90deg); }
+    66%      { -ms-transform: rotateY(90deg) rotateX(90deg); transform: rotateY(90deg) rotateX(90deg); }
+    83%      { -ms-transform: rotateX(90deg); transform: rotateX(90deg); }
+}
+
+._display-cont{
+   position: absolute;
+   margin-left: calc(100% - 25em);
+   margin-top: 10rem;
+   height: 27rem;
+   width: 24rem;
+   border-radius: 5px;
+   background-color: #f8f8f9;
+   font-family: Helvetica, Arial, sans-serif;
+
+   background-color: #fff; 
+}
+
+ol li{
+	padding-bottom: 5px;
+
+}
+ol li:hover{
+	text-decoration: none;
+
+}
+
+._line{
+	color: #fff;
+}
