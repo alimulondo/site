@@ -223,3 +223,94 @@ ol li:hover{
 ._line{
 	color: #fff;
 }
+
+@media screen and (max-width: 1000px){
+	body{
+		font: 150 16px/1.4;
+	}
+
+	#head_div{
+	height: calc(4rem);
+	width: calc(100%);
+}
+
+#logo_div{
+	width: 6rem;
+	height: 4rem;
+	margin-left: 1rem;
+	margin-top: calc(0.5rem - 3px);
+
+
+}
+
+._logo-back{
+	width: 7rem;
+	height: 4rem;
+}
+
+._menu{
+	margin-left: calc(50%) ;
+	margin-top: 1rem;
+
+}
+
+#head_div ul li{
+ 	padding: 10px;
+ 	color: #fff;
+ }
+
+ li:hover{
+ 	text-decoration: underline;
+ }
+
+._display-cont{
+   margin-left: calc(55%);
+   margin-top: 5rem;
+   height: 24rem;
+   width: 24rem;
+}
+
+.spinner div {
+    margin-left: calc(30% - 6rem);
+	margin-top: calc(15% - 3.5rem);
+	width: 20rem;
+	height: 20rem;
+}
+
+.spinner .face1 { 
+    -webkit-transform: translateZ(10rem);
+    -ms-transform: translateZ(10rem);
+    transform: translateZ(10rem);
+}
+.spinner .face2 { 
+    -webkit-transform: rotateY(90deg) translateZ(10rem); 
+    -ms-transform: rotateY(90deg) translateZ(10rem); 
+    transform: rotateY(90deg) translateZ(10rem); 
+}
+.spinner .face3 { 
+    -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(10rem); 
+    -ms-transform: rotateY(90deg) rotateX(90deg) translateZ(10rem); 
+    transform: rotateY(90deg) rotateX(90deg) translateZ(10rem); 
+}
+.spinner .face4 { 
+    -webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(10rem); 
+    -ms-transform: rotateY(180deg) rotateZ(90deg) translateZ(10rem); 
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(10rem); 
+}
+.spinner .face5 { 
+    -webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(10rem); 
+    -ms-transform: rotateY(-90deg) rotateZ(90deg) translateZ(10rem); 
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(10rem); 
+}
+.spinner .face6 { 
+    -webkit-transform: rotateX(-90deg) translateZ(10rem); 
+    -ms-transform: rotateX(-90deg) translateZ(10rem); 
+    transform: rotateX(-90deg) translateZ(10rem); 
+}
+
+.spinner {
+	transform-origin: 15rem 10rem 0rem;
+
+}
+
+}
